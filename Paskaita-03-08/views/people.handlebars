@@ -1,0 +1,20 @@
+<h2>Sveiki prisijunge, {{user}}</h2>
+<a href="/logout">Atsijungti</a>
+{{#if zmones}}
+    <table>
+        <thead>
+            <th>Zmogus</th>
+            <th>Adresas</th>
+            <th>Telefonas</th>
+        </thead>
+        <tbody>
+             {{#each zmones}}
+                <tr>
+                    <td>{{this.zmogus}}</td>
+                    <td>{{this.adresas}}</td>
+                    <td>{{this.telefon}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{/if}}

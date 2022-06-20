@@ -1,0 +1,32 @@
+<h2>Sveiki prisijunge</h2>
+
+    <table class="table">
+        <thead class="nameLine">
+            <th>Vardas</th>
+            <th>Pavarde</th>
+            <th>Telefonas</th>
+            <th>Email</th>
+            <th>Adresas</th>
+            <th>id</th>
+            <th>Veiksmai</th>
+        </thead>
+
+        <tbody> 
+            {{#each jsonData}}
+                <tr>
+                    
+                    <td>{{name}}</td>
+                    <td>{{surname}}</td>
+                    <td>{{tlf}}</td>
+                    <td>{{email}}</td>
+                    <td>{{adres}}</td>
+                    <td>{{id}}</td>
+                    <td>
+                        <a href="/edit-user/{{id}}">EDIT</a>
+                        <button data-id="{{id}}" class="delete-button" >Delete</button>
+                    </td>
+                    
+                </tr>
+                {{/each}}
+        </tbody>
+    </table>

@@ -1,0 +1,26 @@
+<h2>Country list</h2>
+
+    <div class="btn">
+        <button class="ascending">Ascending</button>
+        <button class="descending">Descending</button>
+        <button class="smaller">Smaller then Lithuania</button>
+        <button class="area">Area in Oceania region </button>
+    </div>
+
+    <table class="table">
+        <thead class="nameLine">
+            <th>Name</th>
+            <th>Region</th>
+            <th>Area</th>
+            </thead>
+
+        <tbody> 
+            {{#each jsonData}}
+                <tr>                    
+                    <td>{{name}}</td>
+                    <td>{{region}}</td>
+                    <td>{{area}}</td>    
+                </tr>
+                {{/each}}
+        </tbody>
+    </table>

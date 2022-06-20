@@ -1,21 +1,17 @@
 {
-  "name": "filesystem",
+  "name": "paskaita-03-18",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon  --ignore database.json ."
+    "start": "nodemon  --ignore people.json ."
   },
-  "type": "module",
   "author": "",
+  "type": "module",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  },
   "dependencies": {
-    "chalk": "^5.0.1",
     "express": "^4.17.3",
-    "express-handlebars": "^6.0.3"
+    "nodemon": "^2.0.15"
   }
 }

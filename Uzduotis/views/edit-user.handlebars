@@ -1,4 +1,4 @@
-   {{#if message}}
+  {{#if message}}
     <div style="background: {{status}}; color: #fff; padding: 1rem">
         {{message}}
     </div>
@@ -8,27 +8,27 @@
     <form method="POST" >
         <div class="mb-3">
         <label>Vardas
-            <input type="text" name="name">
+            <input type="text" name="name" value="{{data.name}}">
         </label>
         </div>
         <div class="mb-3">
         <label>Pavarde
-            <input type="text" name="surname">
+            <input type="text" name="surname" value="{{data.surname}}">
         </label>
         </div>
         <div class="mb-3" >
         <label>Telefonas
-            <input type="text" name="tlf" >
+            <input type="text" name="tlf" value="{{data.tlf}}" >
         </label>
         </div>
         <div class="mb-3" >
         <label>Epastas
-            <input type="email" name="email">
+            <input type="email" name="email" value="{{data.email}}">
         </label>
         </div>
         <div class="mb-3" >
         <label>Adresas
-            <input type="" name="adres" id="">
+            <input type="" name="adres" id="" value="{{data.adres}}">
         </label>
         </div>
 

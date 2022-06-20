@@ -1,0 +1,50 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-group{
+    width: 400px;
+    
+}
+
+.labels{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    width: 400px;
+   
+}
+
+li{
+    display: flex;
+    
+    list-style: none;
+}
+
+#newOrderForm {
+    display: none;
+}
+
+#newOrderForm.show {
+    display: block;
+}
+
+.actions {
+    padding-top: 2rem;
+}
+
+.ordersList {
+    padding-top: 2rem;
+}
+
+#newOrderForm .totals {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: right;
+    padding: 1rem 0;
+}

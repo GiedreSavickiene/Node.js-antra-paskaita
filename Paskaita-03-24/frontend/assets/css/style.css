@@ -1,0 +1,56 @@
+body {
+    background: rgb(176, 219, 255);
+}
+
+.todo-container {
+    background: rgb(243, 238, 242);
+    max-width: 600px;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.list-heading {
+    text-align: center;
+}
+
+.messages {
+    display: none;
+}
+
+.messages.show {
+    display: block;
+}
+.mark-done {
+    text-decoration: none;
+}
+
+.mark-done.done {
+    text-decoration: line-through;
+}
+
+#todos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#todos ul > li {
+    padding: 0 0 10px;
+    border-bottom: 1px solid gray;
+}
+.actions {
+    padding-top: 15px;
+}
+
+.edit-mode {
+    background: rgb(255, 245, 187);
+}
+
+li {
+    display: block;
+    margin: 25px 0;
+}
+.delete-todo,
+.update-todo {
+    float: right;
+    margin-left: 1px;
+}
